@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.9.13 on win32)" generated="2024-12-07T10:54:37.474678" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo" source="C:\Users\Lenovo\PycharmProjects\RobotLecture\Tests\demo.robot">
+<test id="s1-t1" name="Demotestcase" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-12-07T10:54:37.694123" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-12-07T10:54:37.694123" elapsed="3.355890"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-12-07T10:54:41.051010" elapsed="0.085175"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-12-07T10:54:41.178017" level="INFO">Page title is 'Facebook – log in or sign up'.</msg>
+<arg>Facebook – log in or sign up</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-12-07T10:54:41.137171" elapsed="0.040846"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-07T10:54:46.189866" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-07T10:54:41.180562" elapsed="5.009304"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-12-07T10:54:46.190822" level="INFO">${login_button} = xpath://button[@type='submit']</msg>
+<var>${login_button}</var>
+<arg>xpath://button[@type='submit']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.190822" elapsed="0.000000"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.191947" elapsed="0.058578"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-12-07T10:54:46.278914" level="INFO">Element 'xpath://button[@type='submit']' is displayed.</msg>
+<arg>${login_button}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.251525" elapsed="0.027389"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-07T10:54:46.279484" level="INFO">Typing text 'abhay@gmail.com' into text field 'id:email'.</msg>
+<arg>id:email</arg>
+<arg>abhay@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.279484" elapsed="0.201518"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-12-07T10:54:46.482060" level="INFO">Typing text 'jgjhghjgvh' into text field 'name:pass'.</msg>
+<arg>name:pass</arg>
+<arg>jgjhghjgvh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.482060" elapsed="0.226922"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-12-07T10:54:46.709992" level="INFO">Clicking button 'xpath://button[@type='submit']'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.708982" elapsed="0.189874"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-12-07T10:54:51.909261" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-12-07T10:54:46.898856" elapsed="5.010405"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-12-07T10:54:52.118940" elapsed="2.670055"/>
+</kw>
+<status status="PASS" start="2024-12-07T10:54:37.693123" elapsed="17.095872"/>
+</test>
+<status status="PASS" start="2024-12-07T10:54:37.484262" elapsed="17.304733"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
